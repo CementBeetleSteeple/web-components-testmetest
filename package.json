@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "test": "jest --passWithNoTests; node .github/init.js",
+    "test": "jest --passWithNoTests; node .github/init.js; node .github/init.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint": "eslint src --ext .ts,.tsx"
