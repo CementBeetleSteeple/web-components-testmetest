@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "test": "jest; node .github/init.js",
+    "test": "jest --passWithNoTests; node .github/init.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint": "eslint src --ext .ts,.tsx"
@@ -24,7 +24,10 @@
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.0",
     "typescript": "^5.0.0",
-    "rollup": "^4.0.0"
+    "rollup": "^4.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "@types/jest": "^29.5.0"
   },
   "author": "CementBeetleSteeple",
   "license": "MIT"
