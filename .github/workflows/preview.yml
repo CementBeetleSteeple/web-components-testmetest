@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm ci && npm run build-storybook
+      - run: npm install --no-package-lock && npm run build-storybook
       - uses: netlify/actions/cli@master
         with:
           args: deploy --dir=storybook-static --alias=pr-${{ github.event.number }}
