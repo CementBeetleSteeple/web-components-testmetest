@@ -1,0 +1,30 @@
+{
+  "name": "sdk-utils-testmetest",
+  "version": "1.0.1",
+  "description": "Accessible React component library for testmetest design system",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^8.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0",
+    "rollup": "^4.0.0"
+  },
+  "author": "CementBeetleSteeple",
+  "license": "MIT"
+}
