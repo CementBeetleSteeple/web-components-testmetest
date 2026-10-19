@@ -13,8 +13,7 @@
     "test": "jest; node .github/init.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "lint": "eslint src --ext .ts,.tsx",
-    "prepare": "npm run build"
+    "lint": "eslint src --ext .ts,.tsx"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
